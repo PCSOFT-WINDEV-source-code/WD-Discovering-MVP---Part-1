@@ -1,0 +1,142 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CPresenterContactTable
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x152e92b802125b0b
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      CPresenterContactTable is Class
+      
+      PROTECTED
+      	m_clContactArray 	is CContactArrayModel		<associated>		// model associated with this presenter: always in phase with the interface
+      	
+      	m_clCurrentContact		is CContactModel dynamic					// Contact currently selected in the table
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1526318642731703051
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructor(pclContactArray is CContactArrayModel dynamic)
+      
+      // Store the source model
+      m_clContactArray <- pclContactArray
+      
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1526318642731768587
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructor()
+      
+     type : 655360
+   -
+     name : AskForNewContactForm
+     procedure_id : 1526318642731834123
+     type_code : 12
+     code : |1-
+      PROCEDURE AskForNewContactForm()
+      
+      // Local variables
+      clNewContact is CContactModel
+      clNewContactForm is CPresenterContactForm(clNewContact)
+      
+      RESULT clNewContactForm
+     type : 458752
+   -
+     name : DeleteCurrentContact
+     procedure_id : 1526318642731899659
+     type_code : 12
+     code : |1-
+      PROCEDURE DeleteCurrentContact()
+      
+      // Check the current contact
+      IF m_clCurrentContact = Null THEN RETURN
+      
+      // Ask for its deletion
+      IF m_clContactArray.Deleting(m_clCurrentContact) = False THEN
+      	RETURN
+      END
+      
+      // Ask to update the interface
+      RequestUpdateUI()
+     type : 458752
+   -
+     name : AskToModifyContactForm
+     procedure_id : 1526318642731965195
+     type_code : 12
+     code : |1-
+      PROCEDURE AskToModifyContactForm()
+      
+      // Local variables
+      clNewContactForm is CPresenterContactForm(m_clCurrentContact)
+      
+      RESULT clNewContactForm
+     type : 458752
+   -
+     name : AddContact
+     procedure_id : 1526318642732030731
+     type_code : 12
+     code : |1-
+      PROCEDURE AddContact(clNewContact is CPresenterContactForm dynamic)
+      
+      IF Add(clNewContact.p_clCurrentContact) = False THEN
+      	RETURN
+      END
+      
+      // All you have to do is update the interface
+      RequestUpdateUI()
+     type : 458752
+   -
+     name : ModifyContact
+     procedure_id : 1526318642732096267
+     type_code : 12
+     code : |1-
+      PROCEDURE ModifyContact()
+      
+      // All you have to do is update the interface
+      RequestUpdateUI()
+     type : 458752
+  properties :
+   -
+     name : p_CurrentContact
+     identifier : 0x152e92b802135b0b
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_CurrentContact() : CContactModel
+         
+         RESULT m_clCurrentContact
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_CurrentContact(Value is CContactModel dynamic)
+         
+         m_clCurrentContact=Value
+        type : 2031616
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CPresentationTableContact
+resources :
+ string_res :
+  identifier : 0x1465d97d008171ab
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

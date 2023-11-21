@@ -1,0 +1,241 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CContactModel
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x152e96e200d04cb1
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  internal_properties : CAAAAAgAAACaaSfWYHd0o+I9dxf9j9AfQvFXQYmvgUhDB724xztgdCNpLDM76hqEFUsb5t9VIXd153URg9lJ7+5Ku43CkSrKv15QDPOJnVWtcnPQwVAsPjIQJi/5JwAaffLj1ZWm1QrP3ArQDjq+mwwvBCWFWKZcDsoGe6DrNgS8RHM5RMaPBCUgrWg0zHg9geTEqdesmVxVRnje/9JSbiTfXxFlVAD2FvIoqcXh996v4Z7PcfWXc5I=
+  type_code : 10
+  p_codes :
+   -
+     code : |1+
+      CContactModel is Class
+      	inhérits of CBaseModel
+      	
+      	PRIVATE
+      		Identifier 	is 8-byte int 	,mapping = ContactID
+      		Lastname 			is string 	,mapping = "ContactLastName"
+      		Firstname 		is string 	,mapping = "ContactFirstName"
+      		Email 		is string 		,mapping = "ContactEmail"
+      		Photo 		is buffer 		,mapping = ContactPhoto
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1526323221146127537
+     type_code : 27
+     code : |1+
+      PROCEDURE Constructor()
+      	// Call the constructor of the inherited object
+      	Constructor CBaseModel(Contact..Name,Contact.ContactID..Name)
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1526323221146193073
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructor()
+      
+     type : 655360
+   -
+     name : _StoreIdentifier
+     procedure_id : 1526323221146258609
+     type_code : 12
+     code : |1+
+      PROCEDURE PRIVATE _StoreIdentifier()
+      
+      Ancestor:_StoreIdentifier()
+      
+      // Store the contact identifier
+      Identifier = m_vID
+     type : 458752
+   -
+     name : bCheckEmail
+     procedure_id : 1526323221146324145
+     type_code : 12
+     code : |1-
+      PROCEDURE PRIVATE bCheckEmail(sEmail is string)
+      
+      IF EmailCheckAddress(sEmail,emailValidateSyntax)  <> emailAddressValid THEN	
+      	RESULT False
+      END
+      
+      RESULT True
+     type : 458752
+  properties :
+   -
+     name : p_sGenerateLabel
+     identifier : 0x152e96e200d14cb1
+     type_code : 103
+     p_codes :
+      -
+        code : |1+
+         PROCEDURE PUBLIC p_sGenerateLabel()
+         
+         // Local variables
+         sLabel is string
+         
+         // Generate the label
+         sLabel = StringBuild("%1 %2"+CR+CR+"%3",Lastname, Firstname, Email)
+         
+         // Returns the generated label
+         RESULT sLabel	
+        type : 1966080
+     template_refs : []
+   -
+     name : p_Identifier
+     identifier : 0x152e96e200d24cb1
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Identifier() : 8-byte int
+         
+         RESULT Identifier
+        type : 1966080
+     template_refs : []
+   -
+     name : p_Name
+     identifier : 0x152e96e200d34cb1
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Name() : string
+         
+         RESULT Lastname
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Name(Value is string)
+         
+         // Store the last name of contact
+         Lastname=Value
+         
+         // The interface must be updated
+         RequestUpdateUI()
+        type : 2031616
+     template_refs : []
+   -
+     name : p_Firstname
+     identifier : 0x152e96e200d44cb1
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Firstname() : string
+          
+         RESULT Firstname
+        type : 1966080
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Firstname(Value is string)
+         
+         // Store the first name of contact
+         Firstname=Value
+         
+         // The interface must be updated
+         RequestUpdateUI()
+        type : 2031616
+     template_refs : []
+   -
+     name : p_Email
+     identifier : 0x152e96e200d54cb1
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Email() : string
+         
+         RESULT Email
+        type : 1966080
+      -
+        internal_properties : CAAAAAgAAAA5aCBqCgeJE0cVdMHCNo2XZi/v8SE/l+Kfjxb9wzxutBAH2yxFEzfwNb+Bh4hSPmtcEmAAtbvgLTFQnTv5f8ECTZqdCP3uKWiIfPCpzQLmwSsnbQkyGcO2H6ZdEW2h9V0lAaSMi9zLRfJ/yvK7WpyJlttC2X2Ag16s0JchZmD53weXI2f8rXiAYL8ZFDqE/+ycYRlAKy16y6QGLe4HxJAcUWqpVu5/rd76KATMmoi3InXvM+OJIyIML65fzlJqBIRSjHsvNFWYDg0LBnfKaj+dsuP1WP3//PGzxXIHSt7j/WuosEcLDyIpbViaw1xHYhb3FWVfLJ/yeCrzN3OqzKl14+i0p0Go4jB0fme6xZ6K5A4wOA==
+        code : |1-
+         PROCEDURE PUBLIC p_Email(sEmailAddress is string)
+         
+         // Check whether the specified email address is valid
+         IF bCheckEmail(sEmailAddress) = False THEN
+         	ErrorThrow(1,<§$0000§>)
+         	RETURN
+         END
+         
+         // Store the email
+         Email=sEmailAddress
+         
+         // The interface must be updated
+         RequestUpdateUI()
+        type : 2031616
+     template_refs : []
+   -
+     name : p_Photo
+     identifier : 0x152e96e200d64cb1
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_Photo() : buffer
+         
+         // Return a default image if the photo is empty
+         IF Photo = "" THEN
+         	bufDefaultPhoto is buffer = fLoadBuffer(fExeDir()+"\photo.png")
+         	RESULT bufDefaultPhoto
+         END
+         
+         RESULT Photo
+        type : 1966080
+      -
+        internal_properties : CAAAAAgAAAAxEChsgJ/xa2ddlDnSLmWXbifP4bGvd3I3354d2xx+fPCX4+RNa28IpRcBryhqlltUqsDgdftAzanghSshn/H6LUq1IAWWsWAY1NChnfqesSN/PamyGbN2R6YV0bXhxYVVIdxk08STfbJnmhpronQZTlPCSb1gY45E8C9BbhBJVycnW/+UxXA4wIttsKbIMyigZQU0Jyl2t6giESpz+PR4ZW51ejrbyUp+xKgo9qz7XtlDn3dVHx6IQ4pTyl4eyNB2kEczIKEkapEHGkOWDoPpppdBrDmLuH3HsVbDxsK3Se98TPvHS16l0WSur3hbRoJr+UGz2CuOxD5vu/8GYB1hx9ywm02k3hxImntGUcJgzBY4MA==
+        code : |1+
+         PROCEDURE PUBLIC p_Photo(sFileName is string)
+         
+         // Check the existence of the file
+         IF fFileExist(sFileName) = False THEN
+         	ErrorThrow(2,"The photo is not supplied")
+         	RETURN
+         END
+         
+         // Load the buffer
+         Photo = fLoadBuffer(sFileName)
+         
+         // The interface must be updated
+         RequestUpdateUI()
+        type : 2031616
+     template_refs : []
+   -
+     name : p_sFullName
+     identifier : 0x152e96e200d74cb1
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_sFullName()
+         
+         RESULT Lastname + [" "] +Firstname
+        type : 1966080
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CModeleContact
+resources :
+ string_res :
+  identifier : 0x1464d197009e9240
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Email address not valid
+      fr-FR : Adresse email non valide
+     index : 0
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

@@ -1,0 +1,173 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Discovering MVP - Part 1
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Windows 32-bit executable
+    internal_properties : CAAAAAgAAADRGgT0R0oUT0wxsl6K8tOak83tisIOsBSYBY6miwmMpywGIOdNm32kyndbveU8/1YA9aa+VluY9/1ucEKDNQTlIq5TFCRsl4jUotGOp6iR4hmkFLkXw7clAyN1iEd2/Sg1SSGu6hHwD6+fR8XMfLh+8ryliCiBtJVP2nI4fQuF2x77ggP563mpWv/QLBguoNYwjB4BODZRwpozQauHn4WApjlnWJC4/qhcO2FYoPfkCJzScM8S6Tv3A8N8b/FGLiezfdrCOUoWR5bV5QfrpQ3KO7H2x8GPcooc+MYAAbOvi+CZ4hs9V22aA9mjI3dXlqsPzay/2Wa3146uVesTx+55CLhmZ0BGE7qQgcMyolZvEzMewCjfaKxrORdpBa0tDUcrcTj3AN+vJJiR/WTfHCyYMnSlQFi91nlbb5bltX3LGCGkXYeU2VSERubdVJpkglmR8QCfJlzWzLwhyLPRd7z2s8xoK804pma2EpiqXaUqfQI46GEDJWrmcIT5HGkGq1ShbhB750zl1t6Fv50vcx9oq8Txthe3hWihpvRcTH5Vinin61u5nXiDWFeu4wDCbLtom3W9HTtqm8dAkcQ7KrlELJCypjSDBl/nNdaXAPQA8eQ0Lf/W/uXAWGbhQOIvQzBeJJnuNX64wQy9kQxpsZLvLQep98ooO/OcP2vnCUU6m0QIMZJv1gBuHlwnPPKwQDZY1Zvw6p/QI40C3To00oQnLVjqBb9p21xXvWouJ1tCL6ToEx/yR9ta2/rT0EGPpJ38qNgnv1A9f7dVEsbdOsjuBWaLeM9r0aXFmlNUcbQXWhwhUwOjQsICS46CPv4vDNoeeSvUgnlYoykBusgh3ljKG9o23+tfb7E9G/VUl2MRqph/bBeze7cuTP8aca0LwwQ6aeBHxa6yKuezlSP3K6rDzgDmp/Q6g0K5AW0ZC+Vm1LFyqe6mZrchNXxxm7DG+cjyhDskNnOSClW+hZtcQ3kY2h5Lsek5Ers4/UlD/1TXRrWLRBgZWyGUNP4FNZyP03PaW47WUlNsqCFGZFb8tbImGo1Uqyo0yV3thxztddtV2IH549s/FppRGLcXUiKfRk9kDXVGyORwQruFHX675NehABQWo18M9oYHN/xrsi+Nnfsf04ioSktzVNCldYoUa3JmZIgb1Bz6DfFGP49zMmtLDsKc0PX0PvZ+IDKwlP2Q8pycZxB6xztdhq8Tfksb0McKrlB9mj0jsJl6wrevlJhAQiUaZ7mzURtqPrxPFMtxvPcfl24DWXGGZX5Ggg8c6kHQh1SEgGzly0pWYNMyCJOYbd9Zu3d1vhWwGAgrHHvWAU6oRdU/4h7wW5Dv8OP1nNcaMaYLVAuy1HJ0HeIYP5G69W7uFivSaQTNWfqUohRi0wGe266bWGEtk8lB64Mns1liaXXjFSN6m3tg35rC5xe+ua3bQY8t8T9msz5mOWShK67cmGQbqGI7JNlA8o/giTQXKNhn92TBm9pMUtRriPCpJccNJrITAqUpvFL8u+ytioo0ZIsRiU3DdC8ErLT++XMGlfetD/gyruGedoAQv15sCQVAXwSvkmMH8Zqvajhm3e6dxpJrjgesC6qqAiPG7wCZxCykfWrPApDNCw+HLB/joKjzuXoqDNemoy7NBdy33apsQdU3+m9E5n7HXmP7SGxaNko0pAPEg5TPRacnf4RSepYmjl1rpDwm2M8TSAOIUt59cGe6gTnOkGsxYUDK7fTdOmipRABcXTSmWZoPke0hig9Ji2QSqi6Tl2aK9xFb+i89bqQl1yG8C0ce25zgRaROWikWPvElHIvMJ74bHBuXKL7wWpU5RmX8QS35ZBX1vy0ysFo6gMUwDO89Res75s9zVIFvMThRGi8v96WZ5dhnQn63hziOu/ZN5fZ6ax1F5esTRg5Sra7BvzHWmXGgTq8dbOehSO8y7+CmqISGALBNBw3jaGj2J7LpYicc6aXxVmqR7X66Rid2lTF4c7qB4vH4np9ULTuv/q27obRpqkn8neC2DcUuQ7qSESJJ5oEWI786dziHx+sbFGuaXpepvtp88/6o5px3DXZw0kgR7ZHRCZHdn8LixEFXpnExEaxhqFilx3LMnOBWV419+SItoZ2qEZZ1BL5yA7aui9n71XjWfo27GWytvVQ/vvb6X51Aie4LocE7jZ7FFeLZBeY1MrINEJxaSWZAA4nwHH9OLIqqhT3TZ9xlS9693+3gvtzx6MsRPLOEuUz7VPaZt+wH0hLjfc7MRwZEuCxsknW9SZelsyjN6OLafvQ1Rqe08ynLdW923ux8gNe7XX8dRtrBk1r/Y+C8rZkR6UBKOqfpC1x8RklfvmDA5e3+/nVGJBy4NKRVb7cPhrdCwM9yK4Ku0Ytb9vBycjkBSfUGP1SIB9DW391s53wxwl8AXwKnr2OELEKBSQu3Rl/iTlufLOWFau1Rp2giIakvRLJ/uHr2eU7ZICCUrCrF8QK/Pgo6qvwqjeXaBxnGcjBp5hSMzb4ej+WAUi3XN4AoKEuWf52IZzuxrDrS0c9QivX6V+d4sPz226MUepRDo6QrFWpfSJUoQUZv2B/yFjGgYuOylP7wO81FhbxZV6vhld+vfo7xWm8PCq+gqDZoUwVPd/kaGqoUNZYgIN636XiKveEYhCFleiiMmlKjAAqDMBufZe4TALcwhcooqZmvgIB156d2XZ4H6M2OWuaYPqunQEE/KoVpeaisWhFmADZkRQIpiOu+WGmkGnNCfZxnq/3FSptsb7pTEXx1w5AHz9sJU1gWBjQkKzzzm5H9OUYRdnc4SdaEzTpfhyxeNaQxyhbWMi0yBjfudsHjs9RgNMV1cPErCt/sE6IdMy9wCiZtR50YqPW+D6xlWyE93N1hRLxzcimHyEqI3N0NykK5Cwmk2aaqanUDapVu3t8blOsGqtAGGNWdIM2qFpYKn1NuBbxYGRioHMDx/VAeHg1HDgFUB2LkfpknRvGp92HYYcnKNmiRll/L3G09OCFJzqqg6x9Wu+cNjQ3RVWgvptCel/zDnqvTfBOpEIEVXE9OVomEfKzfMshZ3wBaTTk21EEltGUoiVWHQh9PjGNbuxoFPVoGmETPWDm7yseJxDRaTf08RIMv3pTYsmn2ZH5x96YMCK0kXEIskydsFSqickMiOriedX+TuIH89eKHZ2HXJ30gOHvMU4JbPcBZYKXARy8SCzgnuHevyO8BNr/Oa8un+xgP6qydKjRrcnfFHSUsQnGXoV6OJUNKfoPK8aRcq6LJ1JHkVb/wgSnhfhGwfmzIcKezSo8S//U5gJpN/flSuI1cpNgvBtvMbmcTRu/LsmuC35ipBgEggSzIOdF+9Phr/16Viokv2P+JTOXG3NoJeZUEFEmoZ6BpQ249clY8ixwmk9BP4NxBZv2xxijAhsLgfneUwYi31EaGV0qQjomeRM2Zp59enWKOvCL2Zci+3UKqE16MBXjF4usgadsHzZFXq89uiY2X2AZjTGS5Af5gUqwmolS/LmEo0sa0A7ikcz3j/Eb3+EYif0O6A++U0qeCzK3dcrkMZe0c1wIYiv0KvEUUvGpiacg3p1/Cn8STEoao14OMVZpB3uMiY/eLO/BUEpo4z40h/nSTipBmrKGlOcTHcaUgp7ONm2BuBzoGdTzdWAkdaib3CjCknV1qck4HV1pngPJ/TCam4cMfW1LAXncRL/c3vhPQkFo7GC2/+mPgTTrKd4Pa76bnOPfjEb1Zvd9ue/EZsiJ6qwJDI9oH29CXmUtOEY9Nue9neiZof+JWn9RaHzUql6YU0RHGyu6Ld6WBvLBLADsAxx9hvTZTSz1wQOax5BTQVKEgEayXVscRbKzRNuKF1BjIoS4sonnrp5Iao9KxqrCCq7l+jIfWDOIydqvnFqcYXEAg17iIX8ExPqwug2mCPSbD7Kq1N4XEtubs7ZXo9oTwhWVSmB2xJE9TlVfq+TMcdLpZaK+3WlZsObzKI3XIyxGYwUx7W990OsVIqWsswQkXYI04quweoLYkYNXNCOBSjhI5zMuYZya1BD4GdxNVqjdqjwjkLDZGyNC+9XtYIan0bX/DY+Afs5Bhh/WHbgJFNb1RLpPTasNTOqDSC2nuUTCmA5sB5/JbuyEhJpaAdfwWt7B23AzF3XO+fnFp/CmWas9CLRLRxJWnMBrBRonFyvAj2CaWkBi6rAoMj7ZoSfLH0pz7/4W0YjCcFIa+QSgahjbka1lXgmv5EgfASYTq7foZ9o5LfxXF6zxPigZJXrnZ4oiE1sHi9NUQhLzLhtquHFBboLrsv3qG4+HwyfImVVK09a3dHTngyLxZifPArUIAbQLi1cpt8RFfDYLNACeCaaJo108rPSEUGQ7JnkpmHTvEuViPS1vI3CK7GIZ7Q56kZwUcVghVMVtCY9faNS4UYX+/cUZHAT6Dkgez+OQxLp3l6o0qO3NqQhth6t/WL/R8JsBvz4YDFyt27tdrQg5WWL8kJ8O/Fhw3HAjAdOcveocKCn+FI7asfG/2Na56lxrDrjtQi85W/Sp3mUa5pOCdNS6+F31WBQdr5EoMMXjjzsWsNRwGLD/olp6O/n5O/zbjOrJ1YR12/Pblh4yVuM8PjWqLJnxhUG8cXQvASUBmZso4LZhch4GsTIg8Jy6D/PygY3qI1oGPKOxwpOiVPHQClNRyeNJ75k02AeVf7zU+G8p+9jTxVyYcSt9E73gIpZen5VK0F0cE+7NisyD9WGYmdJ8MHm9TCjhR+92hbcTkeK5QZLNfgQhC9g==
+    configuration_id : 9572912107824907761
+    type : 1
+    generation_name : WD Discovering MVP - Part 1.exe
+    version :
+     version : VI200057E
+     autoincrement_version : false
+    icon_filename : .\description.ico
+    language : 2
+ elements :
+  identifier : 0x4464cdd9002ef4c9
+  elements :
+   -
+     name : CManageError
+     identifier : 0x4464ce7f00607ec0
+     internal_properties : CAAAAAgAAAA8GhQAv+TM3+h8OEGLdr15vtOdLZAEueGOm9xpyUvBd42hH+9wSFdXtW9pV98R6d8pKQ==
+     physical_name : .\CManageError.wdc
+     type : 4
+   -
+     name : CContactModel
+     identifier : 0x4464d4a901279443
+     internal_properties : CAAAAAgAAABh3VlNeiePoK8PsQYLXKYzJ6DiMoWhB4CugzRd5w0J9/XLeioK/8raCDKsFJxULJxk7A==
+     physical_name : .\CContactModel.wdc
+     type : 4
+   -
+     name : CContactArrayModel
+     identifier : 0x4464d77d013ea016
+     internal_properties : CAAAAAgAAADBs2/RSrpSgKzKpV+EyOF99Q3KPOTA6Z0AqjRpasq3r5uSdJ91mlG+lJgwHHUf6NNE
+     physical_name : .\CContactArrayModel.wdc
+     type : 4
+   -
+     name : WIN_Contact_Form
+     identifier : 0x4464d3b200d3cf4f
+     internal_properties : CAAAAAgAAAAsKgQQr9RcD9hsLZiNg+BaAkXRAcr+YkN2aVd8Zr5W2n6Mh1h+ejhHpZ8Z568h2c85OQ==
+     physical_name : .\WIN_Contact_Form.wdw
+     type : 2
+   -
+     name : WIN_Contact_Table
+     identifier : 0x4465d90e00e4be35
+     internal_properties : CAAAAAgAAACOlOY6Cbb+MT7P2yhbqkcsPrPdrRD1SGl2KYZKmXuRZ51RJKolkyuOV8E7hQ3DvzGbmw==
+     physical_name : .\WIN_Contact_Table.wdw
+     type : 2
+   -
+     name : CPresenterContactTable
+     identifier : 0x4465d97f00e677c3
+     internal_properties : CAAAAAgAAAC4luA8C7D4Iyyx8Wu91kBGWuuR+bA1l0FSmo1ML8XXMdt7SD+qHlG0ibMtiwvFvTOdpQ==
+     physical_name : .\CPresenterContactTable.wdc
+     type : 4
+   -
+     name : RPT_LIST_CONTACT
+     identifier : 0x44663070004214e3
+     internal_properties : CAAAAAgAAABQroiUE0jg+0QaQkIbyHECcndx4dTyJV6nzv0rScvJF9UJ+iornRMdIRuFczOtVUu1vQ==
+     physical_name : .\RPT_LIST_CONTACT.wde
+     type : 3
+   -
+     name : CPresenterContactForm
+     identifier : 0x4464d46f0125b05b
+     internal_properties : CAAAAAgAAADgXtjE41jQi1Q4+o1EawEO6t1Z6dI2U2R2QSispm4mmm5MEx0b7gGT8SuVYyPdpRvlbQ==
+     physical_name : .\CPresenterContactForm.wdc
+     type : 4
+   -
+     name : WIN_OVERVIEW
+     identifier : 0x44735ed101143eb8
+     internal_properties : CAAAAAgAAAAhHRkNuufP4O+eabC7oVrSJ2o2nheiJhd2ZdBVPvYk3Gj0woyZaFkpyHJsVNwU7NwkLA==
+     physical_name : .\WIN_OVERVIEW.wdw
+     type : 2
+   -
+     name : TEST_Contact_Table
+     identifier : 0x447341f0003870ed
+     internal_properties : CAAAAAgAAAD645VEhW/K3m522dsBLwzZCQkhT87qn02qalxfuu1L16yZlxulRIdKuSnWG393jQ==
+     physical_name : .\TEST_Contact_Table.wxt
+     type : 17
+   -
+     name : CBaseModel
+     identifier : 0x4464ce7f00627fc9
+     internal_properties : CAAAAAgAAACKgPKWFVLahULimqe5HgyoTgMdnSDnHb6nXgpwJc9N+znV1KvKNjm5KxWPaSmnU0WPlw==
+     physical_name : .\CBaseModel.wdc
+     type : 4
+  other_elements : []
+  analysis : .\WD Discovering MVP - Part 1.ana\WD Discovering MVP - Part 1.wda
+  uml_model : .\Pattern.uml
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - en-GB
+ code_elements :
+  internal_properties : CAAAAAgAAAAyKR/C0CpdpyTrjrDQ5gqTNI9R2cCSohgD7L7FTHBA5sDLDi3rODmwEtw4DKi5EQtpFMJhIqM7UvoEcn9eD2mn0jow
+  type_code : 0
+  p_codes :
+   -
+     code : |1+
+      // Declare the object containing all the contacts
+      gclAllTheContacts is CContactArrayModel()
+      
+      // Load the contacts
+      gclAllTheContacts.Load()
+      
+      
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Windows 32-bit executable
+     identifier : 0x4464cdd9002ff4c9
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+ children :
+  -
+    explorer_type : windows
+    children :
+     -
+       name : Form
+       explorer_type : custom_folder
+       children :
+        -
+          name : WIN_Contact_Form
+          explorer_type : element
+          type : 2
+        -
+          name : CPresenterContactForm
+          explorer_type : element
+          type : 4
+     -
+       name : Table
+       explorer_type : custom_folder
+       children :
+        -
+          name : WIN_Contact_Table
+          explorer_type : element
+          type : 2
+        -
+          name : CPresenterContactTable
+          explorer_type : element
+          type : 4
+  -
+    name : Windows Store Apps API
+    explorer_type : custom_folder
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

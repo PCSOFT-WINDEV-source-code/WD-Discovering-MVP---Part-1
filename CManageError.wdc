@@ -1,0 +1,127 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : CManageError
+ major_version : 28
+ minor_version : 0
+ type : 4
+ description : ""
+ subtype : 0
+class :
+ identifier : 0x152e92bb022269ab
+ internal_properties : CAAAAAgAAAB2/vstTMCJbS/hlxjFxirSqKvCUuv8YxgpWyl7S3iA
+ code_elements :
+  type_code : 10
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAZ4o0qKUbXJ6qq3rpl+APb4oYo29IPrTqq8tx16MakrMtd8WLWaF9+m+XqIzzkqmYITEdnyl2vM+wJl08ZUNuoTKEG1ZoaXq8+eNBDpcShvXDTBcEoVwpIbvZGXNSe/8Zmj44JD1aTTzy91wReWxQzpVqRrriQOMRDgB1HzN1M4E9zC79zw9u7YePJbIZO2cGHXd+bKiwGnVGgoUrlAoJlTtGMV8BC0tW3Wrg2GMMWLElrXd10qGi0AwgQ
+     code : |1-
+      // Type of errors
+      ErrorCode is Enumération
+      	None
+      	NotFound
+      	HFSQLError
+      END
+      
+      CManageError is Class	
+      
+      	PROTECTED
+      		m_ECode	is ErrorCode		// Error code
+      		m_sText is string		// Text of the error
+      END
+     type : 131072
+  procedures :
+   -
+     name : Constructor
+     procedure_id : 1526318655617657259
+     type_code : 27
+     code : |1-
+      PROCEDURE Constructor()
+      
+      // No error by default
+      m_ECode=None
+     type : 589824
+   -
+     name : Destructor
+     procedure_id : 1526318655617722795
+     type_code : 28
+     code : |1+
+      PROCEDURE Destructor()
+     type : 655360
+   -
+     name : Init
+     procedure_id : 1526318655617788331
+     type_code : 12
+     code : |1-
+      PROCEDURE Init(eErrorCode is ErrorCode, sText is string="")
+      
+      // Store the error
+      m_ECode=eErrorCode
+      m_sText=sText
+      
+      // If it is a HFSQL error, add the associated information
+      IF eErrorCode=HFSQLError AND sText="" THEN
+      	m_sText=HErrorInfo()
+      END
+     type : 458752
+   -
+     name : FormatMessage
+     procedure_id : 1526318655617853867
+     type_code : 12
+     code : |1-
+      PROCEDURE FormatMessage()
+      
+      // Local variables
+      sMessage is string
+      
+      // Management of simple cases
+      IF m_ECode=None THEN RESULT ""
+      IF m_sText<>"" THEN RESULT m_sText
+      
+      // Management of supported codes
+      SWITCH m_ECode
+      	CASE NotFound:		sMessage=<§$0000§>
+      	CASE HFSQLError:		sMessage=<§$0001§>
+      	OTHER CASE:
+      		// No specific formatting
+      END
+      
+      // Return the message
+      RESULT sMessage
+     type : 458752
+  properties :
+   -
+     name : p_eCode
+     identifier : 0x152e92bb022369ab
+     type_code : 103
+     p_codes :
+      -
+        code : |1-
+         PROCEDURE PUBLIC p_eCode() : ErrorCode
+         
+         // Returns the error code
+         RESULT m_ECode
+        type : 1966080
+     template_refs : []
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : CGestionErreur
+resources :
+ string_res :
+  identifier : 0x143405b9005f7737
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : Record not found in the database
+      fr-FR : Enregistrement non trouvé dans la base de données.
+     index : 0
+   -
+     text :
+      en-GB : Error detected by the database.
+      fr-FR : Erreur détectée par la base de données.
+     index : 1
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
